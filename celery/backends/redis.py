@@ -77,6 +77,7 @@ Retry limit exceeded while trying to reconnect to the Celery redis result \
 store backend. The Celery application must be restarted.
 """
 
+
 logger = get_logger(__name__)
 
 class ResultConsumer(BaseResultConsumer):
