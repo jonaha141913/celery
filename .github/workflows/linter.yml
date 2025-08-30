@@ -1,10 +1,11 @@
+
 name: Linter
 
-on: [pull_request, workflow_dispatch]
+on: push
 
 jobs:
   linter:
-    runs-on: blacksmith-4vcpu-ubuntu-2204
+    runs-on: ubuntu-22.04
     steps:
 
       - name: Checkout branch
